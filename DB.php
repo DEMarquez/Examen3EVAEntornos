@@ -4,7 +4,7 @@ class Database {
 	private $conexion;
 
 	private function conectar() {
-		$this->conexion = mysqli_connect("localhost", "root", "", "cursos") or die("Error al conectar");
+		$this->conexion = mysqli_connect("localhost", "root", "root", "cursos") or die("Error al conectar");
 		mysqli_set_charset($this->conexion, "utf8");
 	}
 
