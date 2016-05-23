@@ -7,7 +7,7 @@ if(isset($_GET) && !empty($_GET)) {
 	switch($_GET["action"]) {
 		case "borrar":
 			if($datos->eliminarFila($_GET["id"])) {
-				echo "Registro eliminado<br>";
+				echo "Registro a sido eliminado<br>";
 				echo 'Volver al <a href = "index.php">Listado profesores</a>';
 			}
 			else {
@@ -22,7 +22,7 @@ if(isset($_GET) && !empty($_GET)) {
 			break;
 		case "modificar":
 			if($datos->editarFila($_GET["name"], $_GET["apellido"], $_GET["materia"], $_GET["edad"], $_GET["id"])) {
-				echo "Editado con exito<br>";
+				echo "Ha sido editado con exito<br>";
 				echo 'Volver al <a href = "index.php">Listado profesores</a>';
 			}
 			break;
